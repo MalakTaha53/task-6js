@@ -1,0 +1,254 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.active {
+  font-weight: 800;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.containar {
+  width: calc(100% - 120px);
+  margin: auto;
+}
+
+header {
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  padding: 20px 0px;
+  box-shadow: 0px 1.64744px 8.2372px 0px rgba(0, 0, 0, 0.1);
+}
+
+header .navbar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .containar .navbar .logo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+
+header .logo img {
+  width: 30px;
+}
+
+header .logo a {
+  text-decoration: none;
+  color: #545be8;
+  font-family: "Roboto", sans-serif;
+}
+
+header .containar .navbar nav ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+header .containar .navbar nav a {
+  text-decoration: none;
+  color: #101928;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+}
+
+header .containar .authantication {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+header .containar .authantication a {
+  text-decoration: none;
+  border-radius: 8px;
+  border: 2px solid #545be8;
+  padding: 5px 30px;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header .containar .authantication .login {
+  color: #545be8;
+}
+
+header .containar .authantication .register {
+  color: #fff;
+  background-color: #545be8;
+}
+
+.cover-page {
+  padding: 80px 0px;
+  background-color: #f5f5f5;
+}
+
+.cover-page .cover-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.cover-page .cover-section .cover-info {
+  width: calc((100% - 50px) / 2);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.cover-page .cover-section .cover-image {
+  width: calc((100% - 50px) / 2);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.cover-page .cover-section .cover-image img {
+  width: 400px;
+  height: 400px;
+}
+
+.cover-page .cover-section .cover-info h2 {
+  color: #545be8;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.cover-page .cover-section .cover-info h2 span {
+  font-weight: 700;
+}
+
+.cover-page .cover-section .cover-info h1 {
+  color: #141e32;
+  font-family: "Poppins", sans-serif;
+  font-size: 80px;
+}
+
+.cover-page .cover-section .cover-info h1 span {
+  font-weight: 700;
+  color: #545be8;
+}
+
+.cover-page .cover-section .cover-info p {
+  width: 500px;
+  color: #969696;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+}
+
+.cover-page .cover-section .cover-info .buttons {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 50px;
+}
+
+.cover-page .cover-section .cover-info .buttons a {
+  text-decoration: none;
+}
+
+.cover-page .cover-section .cover-info .buttons a:nth-child(1) {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: "Inter", sans-serif;
+  background-color: #545be8;
+  border-radius: 5px;
+  padding: 10px 50px;
+}
+
+.cover-page .cover-section .cover-info .buttons img {
+  width: 30px;
+  height: 30px;
+}
+
+.cover-page .cover-section .cover-info .buttons .play-video {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 5px;
+}
+
+.cover-page .cover-section .cover-info .buttons .play-video a {
+  color: #141e32;
+  font-size: 14px;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+}
+.inputData {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.registerForm input {
+  width: 200px;
+  height: 30px;
+}
+.inputData input:nth-child(4) {
+  color: white;
+  background-color: rgb(222, 222, 11);
+  border-radius: 8px;
+  border: 2px solid #010101;
+  padding: 5px 30px;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+}
+.registerPage {
+  display: none;
+}
+.registerPage .registerForm a {
+  width: fit-content;
+  text-decoration: none;
+  border-radius: 8px;
+  border: 2px solid #545be8;
+  padding: 5px 30px;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.registerPage {
+  padding-top: 10px;
+  height: 100%;
+  width: 30%;
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: white;
+  display: none;
+}
+.reg-visible {
+  display: inline;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(62, 62, 62, 0.5);
+  z-index: 20;
+}
